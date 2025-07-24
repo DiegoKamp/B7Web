@@ -62,8 +62,30 @@
   </select>
   <!--Quando não especifica o value, é enviado o texto como valor.-->
 
-  <label for="nome">Nome completo</label><br>
-  <textarea name="descricao" id="textarea"></textarea>
+  <label for="resposta">Resposta:</label><br>
+  <textarea name="descricao" id="resposta"></textarea>
+  <!--Ao colocar o mesmo id da label, ao clicar n texto da label, a área será destacada.-->
+
+  <br> <!--Pular linha-->
+
+  <input type="checkbox" id="declaracao">
+  <label for="declaracao">Pode clicar no texto para marcar o checkbox</label>
+
+  <!--
+  <label>
+    <input type="checkbox" name="declaracao">
+    Pode clicar no texto para marcar o checkbox
+  </label> 
+  -->
+  <!--Outra forma de fazer o comando anterior que não precisa colocar id no input-->
+
+  <br>
+
+  <label>
+    Nome completo
+    <input type="text" name="nome">
+  </label>
+  <!--Outra forma de usar a tag label-->
 
 
   <!--É interessante colocar name e value em todos os inputs, exceto submit. Name irá identificar o tipo do input e value é uma "mensagem padrão" dentro do input.-->
