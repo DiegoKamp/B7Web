@@ -41,15 +41,36 @@
   </table>
 
   <h2>Tipos de input</h2>
-  <input type="text"> <!--Texto onde aparece o que o usuário está digitando-->
+  <input type="text">
+  <!--Texto onde aparece o que o usuário está digitando--><!--Uma variação do text é password e email, que só aceita texto no formato de endereço de email-->
   <input type="password"> <!--Texto onde não aparece o que o usuário está digitando-->
   <input type="checkbox"> <!--Botão clicar-->
   <input type="radio" name="sexo"> <!--Funciona em grupo, onde apenas uma opção é válida-->
-  <input type="radio"> <!--Só funciona com mais de um do mesmo tipo-->
+  <input type="radio" name="sexo">
+  <!--Só funciona com mais de um do mesmo tipo, mas com o mesmo name, se usar com nomes diferentes, ambos poderão ser clicados-->
+  <input type="submit"> <!--Botão de envio do formulário, será enviado para a página do "action" do form.-->
+  <input type="date">
+  <input type="datetime-local">
+  <input type="number">
+  <input type="range">
+
+  <select name="orde" id="">
+    <option disabled selected>Selecione</option>
+    <option value="bestseller">Mais vendidos</option>
+    <!--O primeiro fica pré-selecionado como padrão. Para mudar, usamos o atributo selected na opção escolhida. Uma boa opção é deixar um option vazio-->
+    <option value="last">Recentes</option>
+  </select>
+  <!--Quando não especifica o value, é enviado o texto como valor.-->
+
+  <label for="nome">Nome completo</label><br>
+  <textarea name="descricao" id="textarea"></textarea>
+
+
+  <!--É interessante colocar name e value em todos os inputs, exceto submit. Name irá identificar o tipo do input e value é uma "mensagem padrão" dentro do input.-->
 
   <h2>Área de Cadastro</h2>
   <form action="pagina/pagina.html" method="get"> <!--method= "get": vai jogar na URL, "post": vão internamente-->
-    <input type="text" />
+    <input type="text" name="Nome" value="Nome completo">
   </form>
 
   <h2> Área de Login</h2>
