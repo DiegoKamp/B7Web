@@ -15,5 +15,20 @@ label {
 }
 
 input {
-  padding: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+#nome,
+#descricao {
+  width: 300px;
+  border: 1px solid #CCC;
+  outline: 0;
+  /*Tira o efeito do campo*/
+}
+
+#descricao {
+  height: 120px;
+  resize: none;
+  /*Desabilita a função de ajuste do usuário*/
 }
