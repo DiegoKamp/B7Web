@@ -20,7 +20,8 @@ input {
 }
 
 #nome,
-#descricao {
+#descricao,
+#categoria {
   width: 300px;
   border: 1px solid #CCC;
   outline: 0;
@@ -31,4 +32,24 @@ input {
   height: 120px;
   resize: none;
   /*Desabilita a função de ajuste do usuário*/
+}
+
+.termos {
+  text-decoration: none;
+  color: black;
+}
+
+.termos:hover {
+  color: blue;
+  text-decoration: underline;
+}
+
+.butao {
+  padding: 15px;
+  border: 1px solid #CCC;
+  background-color: #eee;
+}
+
+.butao:hover {
+  background-color: #999;
 }
